@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 <script>
-(function() {
+ $(document).ready((function() {
   var repoList = $("#repo-list");
   var apiUrl = "https://api.github.com/users/AdventureT/repos?sort=updated";
 
@@ -34,7 +34,7 @@
       repoList.append(listItem);
     });
   });
-})();
+}));
 </script>
 
     <!-- Required meta tags -->
